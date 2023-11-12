@@ -11,6 +11,41 @@ main {
 }
 
 .first, .second, .third, .fourth, .fifth {
-    padding: 2% 12% 2% 12%;
+    padding: 3% 12% 2% 12%;
+}
+
+.error_msg {
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+
+footer {
+    background-color: #0C356A;
+    color: #FFC436;
+    text-align: center;
+    padding: 3% 0 2% 0;
+}
+
+.hr {
+    border-style: none;
+    border-top-style: dotted;
+    color: #0174BE;
+    border-width: 5px;
+    width: 20%;
+    margin: 5rem auto 1rem;
+    opacity: 100%;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 14rem;
+}
+
+h2 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h3 {
+    font-family: 'Nanum Myeongjo', serif;
 }
 
