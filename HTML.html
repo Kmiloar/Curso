@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+
+    <!--CSS y Bootstrap-->
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--Favicon-->
+    <link rel="icon" href="./imagenes/desktop.png">
+
+    <!--Googl3-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Serif&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 3.5rem;">Curso Básico de Programación Web</h1><br />
+        <h2>HTML, CSS, BOOTSTRAP Y JAVASCRIPT</h2>
+    </header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./imagenes/desktop.png" alt="logo" height="30" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html" style="color: #FFC436;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Primeros Pasos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Javascript</a>
+                        </li>
+                    </ul>
+                    </div>
+            </div>
+        </nav>
+<main>
+    <h2>HTML</h2><br />
+    <P>
+        1.Cuando tenemos abierto <b>Visual Studio Code</b> en el archivo de <b>index.html</b> comenzamos colocando un signo de exclamación (!) en el primer renglón y acto seguido oprimimos <b>Enter</b> a lo que se nos generan automáticamente una serie de códigos:
+    </P>
+    <img src="./imagenes/html/primer pantallazo.png">
+    <p style="padding-top: 1rem;">
+        En el primer renglón encontramos la palabra DOCTYPE seguido de html, esto lo que hace es decirle al navegador que el tipo de documento que está abriendo es un HTML.<br />
+        En el segundo renglón dice html lang="en", lo que le indica al navegador que la página se encuentra en idioma ingles (english), por lo que si vamos a hacer una página principalmente en español debemos cambiar a "es".<br />
+        Entre el tercero y el séptimo renglón encontramos la cabeza o el head de la página, donde escribiremos una parte importante de la configuración de la página web. Es importante saber que lo que se escribe en esta área de head no será visible por el usuario, únicamente el titulo (title) que es el nombre que se muestra en la pestaña del navegador.<br />
+        Lo primero que se encuentra en el head es el meta charset="UTF-8", el cual le permite al navegador cargar las tíldes, eñes y demás caracteres especiales.<br />
+        El siguiente renglón, donde se encuentra el meta viewport, es el que utiliza el navegador para configurar el ancho de pantalla del dispositivo utilizado.
+        Por último en el head encontramos el titulo (title) donde escribiremos el nombre que tendrá dicha página.<br />
+        De la información que sale en el head, en un principio solo cambiaremos el idioma si es necesario y el titulo. Más adelante modificaremos el head para poder enlazar el CSS, JAVASCRIPT, Bootstrap y Google Fonts entre otras.<br />
+        La siguiente etiqueta es la de body, todo lo que se ve en una página web está descrita en el cuerpo de la página, así que allí iniciaremos nuestras prácticas.
+    </p>
+    <hr class="hr"/>
+    <h3 style="padding: 3% 0 2%;">Encabezados</h3>
+    <p>
+        Iniciamos con los encabezados, estos son los que llamamos normalmente como títulos y subtitulos, en HTML contamos con 6 tipos de encabezados cada uno de un tamaño diferente, comenzando con el h1 el de mayor tamaño y el h6 el de menor. Para poder insertar un encabezado necesitamos utilizar las etiquetas especificas de cada uno, todas las etiquetas que utilizaremos en HTML comienzan con un signo menor que < despues el tipo de etiqueta y terminamos con un mayor que >.<br />
+        En el caso de los encabezados utilizaremos h1, h2, h3, h4, h5 y h6; y cerraremos el elemento con su respectiva etiqueta de cierre, la cual es similar a la de apertura pero con un / antes del mayor que.<br />
+        Detente un momento e intenta hacer el siguiente ejercicio:
+    </p>
+    <img class="pantallazo" src="./imagenes/html/Encabezados.png">
+    <p>
+        Que tal estuvo? facil? intermedio? dificil?, ok acá te dejo la forma de hacerlo:
+    </p>
+    <img class="pantallazo" src="./imagenes/html/Encabezados codigo.png">
+    <p>
+        En este punto se me hace importante decirte que HTML es capáz de leer las etiquetas en mayúsculas y minúsculas, sin embargo, por buenas prácticas es mejor escribir siembre las etiquetas en minúscula ya que en cualquier momento otra persona puede leer tu código y es importante que sea fácil de entender.<br />
+        <br />Otro ejercicio un poco más complejo:
+    </p>
+    <img class="pantallazo" src="./imagenes/html/encabezados ej 2.png">
+    <p>Por si lo necesitas, acá está el código:</p>
+    <img class="pantallazo" src="./imagenes/html/encabezados ej 2 codigo.png">
+    <br />
+    <p>Por último un consejo, una página web, al igual que un libro solo debe tener un h1 o encabezado mayor, generalmente en el título, y los demás encabezados serán mas pequeños para llevar el orden de la página.</p>
+
+    <hr class="hr" />
+    <h3 style="padding: 3% 0 2%;">Párrafos</h3>
+    <p>
+        Ya colocamos el título de la página, ahora viene el texto, los párrafos que le darán cuerpo a nuestra página web. La diferencia principal se encuentra en que los encabezados vienen con un tamaño mayor predeterminado, así como en negrilla, mientras los párrafos tienen un tamaño menor y sin negrilla para que sean más fáciles de leer ya que su extención es mayor.<br />
+        Para escribir párrafos utilizaremos la etiqueta "p" de la misma forma que utilizabamos la etiqueta de encabezado, con unos signos mayor que y menor que, y otra etiqueta de cierre el final del elemento.
+    </p>
+
+</main>

@@ -49,3 +49,8 @@ h3 {
     font-family: 'Nanum Myeongjo', serif;
 }
 
+.pantallazo {
+    display: block;
+    margin: 1.5rem auto;
+}
+
