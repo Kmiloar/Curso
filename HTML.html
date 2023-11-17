@@ -1,147 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
 
     <!--CSS y Bootstrap-->
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
     <!--Favicon-->
-    <link rel="icon" href="./imagenes/desktop.png">
+    <link rel="icon" href="./imagenes/desktop.png" />
 
     <!--Googl3-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Serif&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Serif&family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1 style="font-size: 3.5rem;">Curso Básico de Programación Web</h1><br />
-        <h2>HTML, CSS, BOOTSTRAP Y JAVASCRIPT</h2>
+      <h1 style="font-size: 3.5rem">Curso Básico de Programación Web</h1>
+      <br />
+      <h2>HTML, CSS, BOOTSTRAP Y JAVASCRIPT</h2>
     </header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./imagenes/desktop.png" alt="logo" height="30" class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html" style="color: #FFC436;">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Primeros Pasos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./error.html" style="color: #FFC436;">HTML</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./error.html" style="color: #FFC436;">CSS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Bootstrap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Javascript</a>
-                        </li>
-                    </ul>
-                    </div>
-            </div>
-        </nav>
-<main>
-    <h2>HTML</h2><br />
-    <P>
-        Cuando tenemos abierto <b>Visual Studio Code</b> en el archivo de <b>index.html</b> comenzamos colocando un signo de exclamación (!) en el primer renglón y acto seguido oprimimos <b>Enter</b> a lo que se nos generan automáticamente una serie de códigos:
-    </P>
-    <img class="pantallazo" src="./imagenes/html/primer pantallazo.png">
-    <p style="padding-top: 1rem;">
-        En el primer renglón encontramos la palabra DOCTYPE seguido de html, esto lo que hace es decirle al navegador que el tipo de documento que está abriendo es un HTML.<br />
-        En el segundo renglón dice html lang="en", lo que le indica al navegador que la página se encuentra en idioma ingles (english), por lo que si vamos a hacer una página principalmente en español debemos cambiar a "es".<br />
-        Entre el tercero y el séptimo renglón encontramos la cabeza o el head de la página, donde escribiremos una parte importante de la configuración de la página web. Es importante saber que lo que se escribe en esta área de head no será visible por el usuario, únicamente el titulo (title) que es el nombre que se muestra en la pestaña del navegador.<br />
-        Lo primero que se encuentra en el head es el meta charset="UTF-8", el cual le permite al navegador cargar las tíldes, eñes y demás caracteres especiales.<br />
-        El siguiente renglón, donde se encuentra el meta viewport, es el que utiliza el navegador para configurar el ancho de pantalla del dispositivo utilizado.
-        Por último en el head encontramos el titulo (title) donde escribiremos el nombre que tendrá dicha página.<br />
-        De la información que sale en el head, en un principio solo cambiaremos el idioma si es necesario y el titulo. Más adelante modificaremos el head para poder enlazar el CSS, JAVASCRIPT, Bootstrap y Google Fonts entre otras.<br />
-        La siguiente etiqueta es la de body, todo lo que se ve en una página web está descrita en el cuerpo de la página, así que allí iniciaremos nuestras prácticas.
-    </p>
-    <hr class="hr"/>
-    <h3 style="padding: 3% 0 2%;">Encabezados</h3>
-    <p>
-        Iniciamos con los encabezados, estos son los que llamamos normalmente como títulos y subtitulos, en HTML contamos con 6 tipos de encabezados cada uno de un tamaño diferente, comenzando con el h1 el de mayor tamaño y el h6 el de menor. Para poder insertar un encabezado necesitamos utilizar las etiquetas especificas de cada uno, todas las etiquetas que utilizaremos en HTML comienzan con un signo menor que < despues el tipo de etiqueta y terminamos con un mayor que >.<br />
-        En el caso de los encabezados utilizaremos h1, h2, h3, h4, h5 y h6; y cerraremos el elemento con su respectiva etiqueta de cierre, la cual es similar a la de apertura pero con un / antes del mayor que.<br />
+    <nav class="navbar navbar-expand-lg" style="background-color: #0c356a">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./imagenes/desktop.png"
+            alt="logo"
+            height="30"
+            class="d-inline-block align-text-top"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" style="color: #ffc436"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error.html" style="color: #ffc436"
+                >Primeros Pasos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error.html" style="color: #ffc436"
+                >HTML</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error.html" style="color: #ffc436"
+                >CSS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error.html" style="color: #ffc436"
+                >Bootstrap</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error.html" style="color: #ffc436"
+                >Javascript</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main style="text-align: justify;">
+      <h2>HTML</h2>
+      <br />
+      <p>
+        Cuando tenemos abierto <b>Visual Studio Code</b> en el archivo de
+        <b>index.html</b> comenzamos colocando un signo de exclamación (!) en el
+        primer renglón y acto seguido oprimimos <b>Enter</b> a lo que se nos
+        generan automáticamente una serie de códigos:
+      </p>
+      <img class="pantallazo" src="./imagenes/html/primer pantallazo.png" />
+      <p style="padding-top: 1rem">
+        En el primer renglón encontramos la palabra DOCTYPE seguido de html,
+        esto lo que hace es decirle al navegador que el tipo de documento que
+        está abriendo es un HTML.<br />
+        En el segundo renglón dice html lang="en", lo que le indica al navegador
+        que la página se encuentra en idioma ingles (english), por lo que si
+        vamos a hacer una página principalmente en español debemos cambiar a
+        "es".<br />
+        Entre el tercero y el séptimo renglón encontramos la cabeza o el head de
+        la página, donde escribiremos una parte importante de la configuración
+        de la página web. Es importante saber que lo que se escribe en esta área
+        de head no será visible por el usuario, únicamente el titulo (title) que
+        es el nombre que se muestra en la pestaña del navegador.<br />
+        Lo primero que se encuentra en el head es el meta charset="UTF-8", el
+        cual le permite al navegador cargar las tíldes, eñes y demás caracteres
+        especiales.<br />
+        El siguiente renglón, donde se encuentra el meta viewport, es el que
+        utiliza el navegador para configurar el ancho de pantalla del
+        dispositivo utilizado. Por último en el head encontramos el titulo
+        (title) donde escribiremos el nombre que tendrá dicha página.<br />
+        De la información que sale en el head, en un principio solo cambiaremos
+        el idioma si es necesario y el titulo. Más adelante modificaremos el
+        head para poder enlazar el CSS, JAVASCRIPT, Bootstrap y Google Fonts
+        entre otras.<br />
+        La siguiente etiqueta es la de body, todo lo que se ve en una página web
+        está descrita en el cuerpo de la página, así que allí iniciaremos
+        nuestras prácticas.
+      </p>
+      <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Encabezados</h3>
+      <p>
+        Iniciamos con los encabezados, estos son los que llamamos normalmente
+        como títulos y subtitulos, en HTML contamos con 6 tipos de encabezados
+        cada uno de un tamaño diferente, comenzando con el h1 el de mayor tamaño
+        y el h6 el de menor. Para poder insertar un encabezado necesitamos
+        utilizar las etiquetas especificas de cada uno, todas las etiquetas que
+        utilizaremos en HTML comienzan con un signo menor que < despues el tipo
+        de etiqueta y terminamos con un mayor que >.<br />
+        En el caso de los encabezados utilizaremos h1, h2, h3, h4, h5 y h6; y
+        cerraremos el elemento con su respectiva etiqueta de cierre, la cual es
+        similar a la de apertura pero con un / antes del mayor que.<br />
         Detente un momento e intenta hacer el siguiente ejercicio:
-    </p>
-    <img class="pantallazo" src="./imagenes/html/Encabezados.png">
-    <p>
-        Que tal estuvo? facil? intermedio? dificil?, ok acá te dejo la forma de hacerlo:
-    </p>
-    <img class="pantallazo" src="./imagenes/html/Encabezados codigo.png">
-    <p>
-        En este punto se me hace importante decirte que HTML es capáz de leer las etiquetas en mayúsculas y minúsculas, sin embargo, por buenas prácticas es mejor escribir siembre las etiquetas en minúscula ya que en cualquier momento otra persona puede leer tu código y es importante que sea fácil de entender.<br />
+      </p>
+      <img class="pantallazo" src="./imagenes/html/Encabezados.png" />
+      <p>
+        Que tal estuvo? facil? intermedio? dificil?, ok acá te dejo la forma de
+        hacerlo:
+      </p>
+      <img class="pantallazo" src="./imagenes/html/Encabezados codigo.png" />
+      <p>
+        En este punto se me hace importante decirte que HTML es capáz de leer
+        las etiquetas en mayúsculas y minúsculas, sin embargo, por buenas
+        prácticas es mejor escribir siembre las etiquetas en minúscula ya que en
+        cualquier momento otra persona puede leer tu código y es importante que
+        sea fácil de entender.<br />
         <br />Otro ejercicio un poco más complejo:
-    </p>
-    <img class="pantallazo" src="./imagenes/html/encabezados ej 2.png">
-    <p>Por si lo necesitas, acá está el código:</p>
-    <img class="pantallazo" src="./imagenes/html/encabezados ej 2 codigo.png">
-    <br />
-    <p>Por último un consejo, una página web, al igual que un libro solo debe tener un h1 o encabezado mayor, generalmente en el título, y los demás encabezados serán mas pequeños para llevar el orden de la página.</p>
+      </p>
+      <img class="pantallazo" src="./imagenes/html/encabezados ej 2.png" />
+      <p>Por si lo necesitas, acá está el código:</p>
+      <img
+        class="pantallazo"
+        src="./imagenes/html/encabezados ej 2 codigo.png"
+      />
+      <br />
+      <p>
+        Por último un consejo, una página web, al igual que un libro solo debe
+        tener un h1 o encabezado mayor, generalmente en el título, y los demás
+        encabezados serán mas pequeños para llevar el orden de la página.
+      </p>
 
-    <hr class="hr" />
-    <h3 style="padding: 3% 0 2%;">Párrafos</h3>
-    <p>
-        Ya colocamos el título de la página, ahora viene el texto, los párrafos que le darán cuerpo a nuestra página web. La diferencia principal se encuentra en que los encabezados vienen con un tamaño mayor predeterminado, así como en negrilla, mientras los párrafos tienen un tamaño menor y sin negrilla para que sean más fáciles de leer ya que su extención es mayor.<br />
-        Para escribir párrafos utilizaremos la etiqueta "p" de la misma forma que utilizabamos la etiqueta de encabezado, con unos signos mayor que y menor que, y otra etiqueta de cierre el final del elemento.<br />
-        Ahora comenzaremos a hacer una página web sobre cada uno de nosotros, en el primer paso se verá así:
-    </p>
-    <img class="pantallazo" src="./imagenes/html/parrafo 1.png">
-    <p>
-        Acá va otro consejo, cuando estes desarrollando una pagina web y no tengas el texto que va a llevar, puedes visitar paginas como <a href="https://www.lipsum.com/">lipsum.com</a> donde podrás generar texto Lorem Ipsum, ya sea solo 1 frase hasta varios párrafos.<br />
-        Espero que hayas intentado hacerlo por ti mismo, pero de todas formas acá te dejo el código:
-    </p>
-    <img class="pantallazo" src="./imagenes/html/parrafo 1 codigo.png">
-    <hr class="hr"/>
-    <h3 style="padding: 3% 0 2%;">Etiquetas Autoconclusivas</h3>
-    <p>
-        Existen 2 etiquetas autoconclusivas que utilizaremos seguido, estas, como su nombre lo indica, no tienen una etiqueta de apertura y otra de cierre, solo utiliza 1 que se cierra automáticamente.<br />
-        <b>br</b> es una etiqueta que significa break, se utiliza especialmente en los párrafos para indicar el punto donde queremos hacer un punto y aparte, ya que de no utilizarse, el navegador leera todo el párrafo de seguido, así le demos enter dentro de nuestro código. Esta etiqueta se utiliza de la siguiente manera <b>signo de menor qué < seguido de br, un espacio, slash invertido y signo de mayor que ></b>.
-        <b>hr</b> significa horizontal rule, o regla horizontal, sirve para crear una linea horizontal en nuestra pantalla para dividir una sección de otra, esta regla horizontal podrá ser editada más adelante cuando veamos CSS.<br />
-        Si bien el navegador las entiende sin utilizar el slash invertido, son buenas prácticas colocarlo.<br />
+      <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Párrafos</h3>
+      <p>
+        Ya colocamos el título de la página, ahora viene el texto, los párrafos
+        que le darán cuerpo a nuestra página web. La diferencia principal se
+        encuentra en que los encabezados vienen con un tamaño mayor
+        predeterminado, así como en negrilla, mientras los párrafos tienen un
+        tamaño menor y sin negrilla para que sean más fáciles de leer ya que su
+        extención es mayor.<br />
+        Para escribir párrafos utilizaremos la etiqueta "p" de la misma forma
+        que utilizabamos la etiqueta de encabezado, con unos signos mayor que y
+        menor que, y otra etiqueta de cierre el final del elemento.<br />
+        Ahora comenzaremos a hacer una página web sobre cada uno de nosotros, en
+        el primer paso se verá así:
+      </p>
+      <img class="pantallazo" src="./imagenes/html/parrafo 1.png" />
+      <p>
+        Acá va otro consejo, cuando estes desarrollando una pagina web y no
+        tengas el texto que va a llevar, puedes visitar paginas como
+        <a href="https://www.lipsum.com/">lipsum.com</a> donde podrás generar
+        texto Lorem Ipsum, ya sea solo 1 frase hasta varios párrafos.<br />
+        Espero que hayas intentado hacerlo por ti mismo, pero de todas formas
+        acá te dejo el código:
+      </p>
+      <img class="pantallazo" src="./imagenes/html/parrafo 1 codigo.png" />
+      <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Etiquetas Autoconclusivas</h3>
+      <p>
+        Existen 2 etiquetas autoconclusivas que utilizaremos seguido, estas,
+        como su nombre lo indica, no tienen una etiqueta de apertura y otra de
+        cierre, solo utiliza 1 que se cierra automáticamente.<br />
+        <b>br</b> es una etiqueta que significa break, se utiliza especialmente
+        en los párrafos para indicar el punto donde queremos hacer un punto y
+        aparte, ya que de no utilizarse, el navegador leera todo el párrafo de
+        seguido, así le demos enter dentro de nuestro código. Esta etiqueta se
+        utiliza de la siguiente manera
+        <b
+          >signo de menor qué < seguido de br, un espacio, slash invertido y
+          signo de mayor que ></b
+        >. <b>hr</b> significa horizontal rule, o regla horizontal, sirve para
+        crear una linea horizontal en nuestra pantalla para dividir una sección
+        de otra, esta regla horizontal podrá ser editada más adelante cuando
+        veamos CSS.<br />
+        Si bien el navegador las entiende sin utilizar el slash invertido, son
+        buenas prácticas colocarlo.<br />
         Ahora continuemos con nuestra página autobiográfica:
-    </p>
-    <img class="pantallazo" src="./imagenes/html/biografia 1.png">
-    <p>Y el código será así:</p>
-    <img class="pantallazo" src="./imagenes/html/biografia 1 codigo.png">
-    <p>Pero, cómo quedaría si no utilizamos la etiqueta <b>br</b>?</p>
-    <img class="pantallazo" src="./imagenes/html/biografia 1-1.png">
-    <p>Notas la diferencia?</p>
-    <hr class="hr"/>
-    <h3 style="padding: 3% 0 2%;">Elemento de Listas</h3>
-    <p>
-        Existen 2 formas de hacer listas en el desarrollo web, la forma ordenada y la forma desordenada.<br />
-        La forma ordenada <b>ol</b> genera un listado numérico desde el 1 en orden hasta la cantidad de veces que utilicemos la etiqueta.<br />
-    </p>
-    <img src="./imagenes/html/order list.png" class="pantallazo" alt="order_list" />
-    <p>
-        La forma desordenada <b>ul</b> genera un listado con puntos, en el cual ningún elemento tiene un valor superior a otro.<br />
-    </p>
-    <img src="./imagenes/html/Unorder List.png" class="pantallazo" alt="unorder_list" />
-    <p>
-        En ambos ejemplos la estructura es la misma, comenzamos con la etiqueta <b>ol</b> o <b>ul</b>, ya sea una lista ordenada u desordenada, y en medio de la etiqueta de apertura y cierre colocamos los items de la lista con la etiqueta <b>li</b>.<br />
-        Tambien podemos hacer elementos anidados, los cuales son listas ordenadas dentro de listas desordenadas o al contrario, incluso listas dentro de listas dentro de listas las veces que necesitemos (importante no abusar de este recurso ya que puede hacer la página dificil de comprender).<br />
+      </p>
+      <img class="pantallazo" src="./imagenes/html/biografia 1.png" />
+      <p>Y el código será así:</p>
+      <img class="pantallazo" src="./imagenes/html/biografia 1 codigo.png" />
+      <p>Pero, cómo quedaría si no utilizamos la etiqueta <b>br</b>?</p>
+      <img class="pantallazo" src="./imagenes/html/biografia 1-1.png" />
+      <p>Notas la diferencia?</p>
+      <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Elemento de Listas</h3>
+      <p>
+        Existen 2 formas de hacer listas en el desarrollo web, la forma ordenada
+        y la forma desordenada.<br />
+        La forma ordenada <b>ol</b> genera un listado numérico desde el 1 en
+        orden hasta la cantidad de veces que utilicemos la etiqueta.<br />
+      </p>
+      <img
+        src="./imagenes/html/order list.png"
+        class="pantallazo"
+        alt="order_list"
+      />
+      <p>
+        La forma desordenada <b>ul</b> genera un listado con puntos, en el cual
+        ningún elemento tiene un valor superior a otro.<br />
+      </p>
+      <img
+        src="./imagenes/html/Unorder List.png"
+        class="pantallazo"
+        alt="unorder_list"
+      />
+      <p>
+        En ambos ejemplos la estructura es la misma, comenzamos con la etiqueta
+        <b>ol</b> o <b>ul</b>, ya sea una lista ordenada u desordenada, y en
+        medio de la etiqueta de apertura y cierre colocamos los items de la
+        lista con la etiqueta <b>li</b>.<br />
+        Tambien podemos hacer elementos anidados, los cuales son listas
+        ordenadas dentro de listas desordenadas o al contrario, incluso listas
+        dentro de listas dentro de listas las veces que necesitemos (importante
+        no abusar de este recurso ya que puede hacer la página dificil de
+        comprender).<br />
         Así que pongamos en práctica lo que hemos aprendido hasta ahora.
-    </p>
-    <img class="pantallazo" src="./imagenes/html/Top series.png" alt="top_series" />
-    <p>
-        Que tal si creamos nuestro propio top de series, películas, comida o lo que ustedes gusten, utilizando encabezados, parrafos, reglas horizontales, saltos de línea, listas ordenadas y listas desordenadas.<br />
+      </p>
+      <img
+        class="pantallazo"
+        src="./imagenes/html/Top series.png"
+        alt="top_series"
+      />
+      <p>
+        Que tal si creamos nuestro propio top de series, películas, comida o lo
+        que ustedes gusten, utilizando encabezados, parrafos, reglas
+        horizontales, saltos de línea, listas ordenadas y listas
+        desordenadas.<br />
         Acá te dejo mi código para que compares.
-    </p>
-    <img class="pantallazo" src="./imagenes/html/Top series codigo.png" alt="codigo_top">
-    <hr class="hr" />
-
-
-</main>
+      </p>
+      <img
+        class="pantallazo"
+        src="./imagenes/html/Top series codigo.png"
+        alt="codigo_top"
+      />
+      <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Links</h3>
+      <p>
+        El elemento de link, conocido en inglés como anchor tag, nos permite generar un hipervínculo a una página web, ya sea dentro de nuestra propia web o cualquier otra página web.<br />
+        Para crear un link utilizamos la etiqueta <b>a</b> seguida de el atributo href="", dentro de las comillas pegaremos el link al que se quiere hacer hipervínculo.<br />
+        después de la etiqueta de apertura, copiamos el texto o insertamos la imagen que queremos que sirva como hipervínculo y finalmente usamos una etiqueta de cierre /a.<br />
+        Hagamos la prueba, vamos a colocar un link a la página de <b>Wikipedia</b> de una de las series o películas de nuestro top.
+      </p>
+      <img class="pantallazo" src="./imagenes/html/link1.png" alt="top-link">
+      <p>En este caso utilizamos la etiqueta de link dentro del item de lista.</p>
+      <img class="pantallazo" src="./imagenes/html/link1 codigo.png" alt="top-link-codigo">
+      <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Imágenes</h3>
+      <p>
+        Una página web sin imágenes puede llegar a ser muy aburrida o monótona, por lo que vamos a aprender como utilizarlas <br />
+        La etiqueta que utilizaremos se llama img y utiliza el atributo src, que viene del inglés source o fuente, entre las comillas colocaremos la ruta que lleva a la imagen elegída.<br />
+        Esta puede estar guardada en una carpeta junto a nuestros archivos html y css, o puede ser un link de algún banco de imágenes.<br />
+        Continuemos con nuestro top.
+      </p>
+      <img class="pantallazo" src="./imagenes/html/imagenes1.png" alt="insert_img">
+      <p>
+        Este sería el código utilizado:
+      </p>
+      <img class="pantallazo" src="./imagenes/html/imagenes1_codigo.png" alt="top_img_codigo">
+      <p>
+        En el caso de las imágenes utilizamos también un atributo alt, el cual significa texto alternativo y sirve para 2 cosas, primero, en caso que la imagen se pierda, mostrará ese texto lo que ayudará al creador o editor de la página a reconocer cual era la imagen que iba en ese lugar.<br />
+        Segundo, para personas con discapacidad visual, hay programas o páginas que describen el texto alternativo, así pueden saber qué es lo que hay en la imágen.<br />
+        En este caso las imágenes originales tal como las guardé en la carpeta me parecieron un poco grandes, por lo que utilicé un atributo width, que significa ancho, para darle el tamaño que buscaba, pero tambien podemos utilizar algún programa de disminuir el tamaño de las imágenes para editarlas.<br />
+        Es importante tener en cuenta que imágenes muy grandes y muy pesadas harán nuestra pagina web más lenta para cargar, por lo que es recomendable no utilizar imágenes de mas de 200 kbs.
+      </p>
+      <hr class="hr" />
+      
+    </main>
+  </body>
+</html>
