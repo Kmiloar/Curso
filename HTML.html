@@ -32,7 +32,7 @@
       <br />
       <h2>HTML, CSS, BOOTSTRAP Y JAVASCRIPT</h2>
     </header>
-    <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;" id="nav-top">
       <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"><img src="./imagenes/desktop.png" alt="logo" height="30" class="d-inline-block align-text-top"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -262,7 +262,7 @@
       <h3 style="padding: 3% 0 2%">Imágenes</h3>
       <p>
         Una página web sin imágenes puede llegar a ser muy aburrida o monótona, por lo que vamos a aprender como utilizarlas <br />
-        La etiqueta que utilizaremos se llama img y utiliza el atributo src, que viene del inglés source o fuente, entre las comillas colocaremos la ruta que lleva a la imagen elegída.<br />
+        La etiqueta que utilizaremos se llama <b>img</b> y utiliza el atributo <b>src</b>, que viene del inglés source o fuente, entre las comillas colocaremos la ruta que lleva a la imagen elegída.<br />
         Esta puede estar guardada en una carpeta junto a nuestros archivos html y css, o puede ser un link de algún banco de imágenes.<br />
         Continuemos con nuestro top.
       </p>
@@ -272,19 +272,30 @@
       </p>
       <img class="pantallazo" src="./imagenes/html/imagenes1_codigo.png" alt="top_img_codigo">
       <p>
-        En el caso de las imágenes utilizamos también un atributo alt, el cual significa texto alternativo y sirve para 2 cosas, primero, en caso que la imagen se pierda, mostrará ese texto lo que ayudará al creador o editor de la página a reconocer cual era la imagen que iba en ese lugar.<br />
+        En el caso de las imágenes utilizamos también un atributo <b>alt</b>, el cual significa texto alternativo y sirve para 2 cosas, primero, en caso que la imagen se pierda, mostrará ese texto lo que ayudará al creador o editor de la página a reconocer cual era la imagen que iba en ese lugar.<br />
         Segundo, para personas con discapacidad visual, hay programas o páginas que describen el texto alternativo, así pueden saber qué es lo que hay en la imágen.<br />
         En este caso las imágenes originales tal como las guardé en la carpeta me parecieron un poco grandes, por lo que utilicé un atributo width, que significa ancho, para darle el tamaño que buscaba, pero tambien podemos utilizar algún programa de disminuir el tamaño de las imágenes para editarlas.<br />
         Es importante tener en cuenta que imágenes muy grandes y muy pesadas harán nuestra pagina web más lenta para cargar, por lo que es recomendable no utilizar imágenes de mas de 200 kbs.
       </p>
       <hr class="hr" />
+      <h3 style="padding: 3% 0 2%">Comentarios Finales de HTML</h3>
+      <p>
+        Espero que hasta ahora todos entendieran el tema, si no, pueden hacer una segunda repasada o escribirme e intentaré colaborar en lo que pueda. Sin embargo, debo aclarar que lo que hemos hablado en esta sección de HTML es solo una pequeña porción del tema, tal vez la mas importante para aquellos que están comenzando, pero aún queda mucha información que irán descubriendo con la práctica y la busqueda en internet. Creo que puedo decir con tranquilidad que nadie sabe todos los temas completamente, ni necesita saberlos, ya que para eso existen páginas como <a href="https://www.w3schools.com/">w3schools</a>, <a href="https://developer.mozilla.org/es/">MDN Web Docs</a>, <a href="https://stackoverflow.com/">Stack Overflow</a> y muchas otras que serán un apoyo constante en el desarrollo web.<br />
+        Les dejo como recomendación que practiquen mucho, ya que aunque no parece un tema muy dificil, puede olvidarse con el tiempo, así que creen paginas web locales cada vez que se les ocurra una idea.<br />
+        <b>Nos vemos en CSS!</b>
+      </p>
       
     </main>
 
     <footer>
       <h6>Página creada por Camilo Ardila</h6>
       <p>Si quieres comunicarte conmigo te dejo los links</p>
-      <p><a href="mailto:ardila84@outlook.com"><img class="rrss" src="./imagenes/RRSS/mail.png" width="30px"></a><a href="https://wa.me/573144782183?text=Me%20gustaría%20saber%20más%20sobre%20los%20accesorios"><img class="rrss" src="./imagenes/RRSS/whatsapp.png" width="30px"></a></p>
+      <p><a href="mailto:ardila84@outlook.com"><img class="rrss" src="./imagenes/RRSS/mail.png" width="30px"></a>
+        <a href="https://wa.me/573144782183?text=Tengo%20una%20duda%20sobre%20el%20curso"><img class="rrss" src="./imagenes/RRSS/whatsapp.png" width="30px"></a>
+        <a href="#nav-top"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC436" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
+      </svg></a></p>
   </footer>
   </body>
 </html>

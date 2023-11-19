@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!--Animated Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!--Favicon-->
     <link rel="icon" href="./imagenes/desktop.png">
@@ -29,7 +34,7 @@
             <div class="row align-items-start">
                 <div class="col-md-6" style="text-align: justify;">
                     <P>Comencemos por el principio, mi nombre es Camilo Ardila y <b>NO</b> soy programador, solo soy un aprendiz entusiasta que ha buscado en un curso y otro, logrando una pequeña comprensión del tema que ahora quiero compartir con ustedes.</P>
-                    <p>El curso estará dividido en 4 secciones principales, HTML, CSS, Bootstrap y Javascript, cada uno cuenta con información escrita y ejercicios para una mejor comprensión de los temas. Igualmente se recomienda buscar en webs como w3schools, MDN Web Docs o Stack Overflow.</p>
+                    <p>El curso estará dividido en 4 secciones principales, HTML, CSS, Bootstrap y Javascript, cada uno cuenta con información escrita y ejercicios para una mejor comprensión de los temas. Igualmente se recomienda buscar en webs como <a href="https://www.w3schools.com/">w3schools</a>, <a href="https://developer.mozilla.org/es/">MDN Web Docs</a>, <a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
                 </div>
                 <div class="col-md-6">
                     <img alt="Camilo Ardila" src="./imagenes/Foto Perfil.jpg" height="270">
@@ -37,7 +42,7 @@
             </div> 
         </div>
     </main>
-        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;" id="nav-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./imagenes/desktop.png" alt="logo" height="30" class="d-inline-block align-text-top"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +73,8 @@
                     </div>
             
         </nav>
+        <div data-aos="fade-left"
+        data-aos-duration="1000">
     <div class="first" id="first">
         <h3>PRIMEROS PASOS</h3><br>
         <div class="container text-center">
@@ -86,9 +93,12 @@
                     <a href="https://code.visualstudio.com/"><img src="./imagenes/vscode.png" alt="vscode" height="240"></a>
                 </div>
             </div>    
+            </div>
     </div>
     <hr class="hr"/>
     </div>
+    <div data-aos="fade-right"
+    data-aos-duration="1000">
     <div class="second" id="html">
         <h3>HTML</h3><br />
         <div class="container text-center">
@@ -104,9 +114,12 @@
                     <a href="./HTML.html" ><img src="./imagenes/1366_2000.jpg" alt="HTML5" height="240"></a>
                 </div>
             </div>
+            </div>
         </div>
+    </div>
         <hr class="hr"/>
-        </div>
+    <div data-aos="fade-left"
+        data-aos-duration="1000">
     <div class="third" id="css">
         <h3>CSS</h3><br />
         <div class="container text-center">
@@ -122,8 +135,11 @@
                 </div>
             </div>
         </div>
+        </div>
+        </div>
         <hr class="hr"/>
-    </div>
+        <div data-aos="fade-right"
+        data-aos-duration="1000">
     <div class="fourth" id="bootstrap">
         <h3>BOOTSTRAP</h3><br />
         <div class="container text-center">
@@ -140,8 +156,11 @@
                     </div>
                     </div>
                     </div>
-                    <hr class="hr" />
                     </div>
+                    </div>
+                    <hr class="hr" />
+                    <div data-aos="fade-left"
+                    data-aos-duration="1000">
                     <div class="fifth" id="js">
                         <h3>JAVASCRIPT</h3><br />
                         <div class="container text-center">
@@ -159,18 +178,23 @@
                                     </div>
                                     </div>
                                     </div>
+                                    </div>
                     </div>
-
-    </div>
 
     <footer>
         <h6>Página creada por Camilo Ardila</h6>
         <p>Si quieres comunicarte conmigo te dejo los links</p>
-        <p><a href="mailto:ardila84@outlook.com"><img class="rrss" src="./imagenes/RRSS/mail.png" width="30px"></a><a href="https://wa.me/573144782183?text=Me%20gustaría%20saber%20más%20sobre%20los%20accesorios"><img class="rrss" src="./imagenes/RRSS/whatsapp.png" width="30px"></a></p>
-        
+        <p><a href="mailto:ardila84@outlook.com"><img class="rrss" src="./imagenes/RRSS/mail.png" width="30px"></a>
+          <a href="https://wa.me/573144782183?text=Tengo%20una%20duda%20sobre%20el%20curso"><img class="rrss" src="./imagenes/RRSS/whatsapp.png" width="30px"></a>
+          <a href="#nav-top"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC436" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
+        </svg></a></p>
     </footer>
 
         
-    
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
