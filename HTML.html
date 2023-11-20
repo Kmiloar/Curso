@@ -15,6 +15,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!--Animated Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--Favicon-->
     <link rel="icon" href="./imagenes/desktop.png" />
 
@@ -64,6 +68,8 @@
       
   </nav>
     <main style="text-align: justify;">
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h2>HTML</h2>
       <br />
       <p>
@@ -101,7 +107,10 @@
         está descrita en el cuerpo de la página, así que allí iniciaremos
         nuestras prácticas.
       </p>
+    </div>
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Encabezados</h3>
       <p>
         Iniciamos con los encabezados, estos son los que llamamos normalmente
@@ -142,8 +151,10 @@
         tener un h1 o encabezado mayor, generalmente en el título, y los demás
         encabezados serán mas pequeños para llevar el orden de la página.
       </p>
-
+</div>
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Párrafos</h3>
       <p>
         Ya colocamos el título de la página, ahora viene el texto, los párrafos
@@ -168,7 +179,10 @@
         acá te dejo el código:
       </p>
       <img class="pantallazo" src="./imagenes/html/parrafo 1 codigo.png" />
+      </div>
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Etiquetas Autoconclusivas</h3>
       <p>
         Existen 2 etiquetas autoconclusivas que utilizaremos seguido, estas,
@@ -196,7 +210,10 @@
       <p>Pero, cómo quedaría si no utilizamos la etiqueta <b>br</b>?</p>
       <img class="pantallazo" src="./imagenes/html/biografia 1-1.png" />
       <p>Notas la diferencia?</p>
+      </div>
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Elemento de Listas</h3>
       <p>
         Existen 2 formas de hacer listas en el desarrollo web, la forma ordenada
@@ -247,7 +264,10 @@
         src="./imagenes/html/Top series codigo.png"
         alt="codigo_top"
       />
+      </div>
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Links</h3>
       <p>
         El elemento de link, conocido en inglés como anchor tag, nos permite generar un hipervínculo a una página web, ya sea dentro de nuestra propia web o cualquier otra página web.<br />
@@ -259,6 +279,8 @@
       <p>En este caso utilizamos la etiqueta de link dentro del item de lista.</p>
       <img class="pantallazo" src="./imagenes/html/link1 codigo.png" alt="top-link-codigo">
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Imágenes</h3>
       <p>
         Una página web sin imágenes puede llegar a ser muy aburrida o monótona, por lo que vamos a aprender como utilizarlas <br />
@@ -277,13 +299,18 @@
         En este caso las imágenes originales tal como las guardé en la carpeta me parecieron un poco grandes, por lo que utilicé un atributo width, que significa ancho, para darle el tamaño que buscaba, pero tambien podemos utilizar algún programa de disminuir el tamaño de las imágenes para editarlas.<br />
         Es importante tener en cuenta que imágenes muy grandes y muy pesadas harán nuestra pagina web más lenta para cargar, por lo que es recomendable no utilizar imágenes de mas de 200 kbs.
       </p>
+      </div>
+      </div>
       <hr class="hr" />
+      <div data-aos="zoom-in"
+      data-aos-duration="1000">
       <h3 style="padding: 3% 0 2%">Comentarios Finales de HTML</h3>
       <p>
         Espero que hasta ahora todos entendieran el tema, si no, pueden hacer una segunda repasada o escribirme e intentaré colaborar en lo que pueda. Sin embargo, debo aclarar que lo que hemos hablado en esta sección de HTML es solo una pequeña porción del tema, tal vez la mas importante para aquellos que están comenzando, pero aún queda mucha información que irán descubriendo con la práctica y la busqueda en internet. Creo que puedo decir con tranquilidad que nadie sabe todos los temas completamente, ni necesita saberlos, ya que para eso existen páginas como <a href="https://www.w3schools.com/">w3schools</a>, <a href="https://developer.mozilla.org/es/">MDN Web Docs</a>, <a href="https://stackoverflow.com/">Stack Overflow</a> y muchas otras que serán un apoyo constante en el desarrollo web.<br />
         Les dejo como recomendación que practiquen mucho, ya que aunque no parece un tema muy dificil, puede olvidarse con el tiempo, así que creen paginas web locales cada vez que se les ocurra una idea.<br />
         <b>Nos vemos en CSS!</b>
       </p>
+      </div>
       
     </main>
 
@@ -297,5 +324,10 @@
         <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
       </svg></a></p>
   </footer>
+
+  <script>
+    AOS.init();
+  </script>
+
   </body>
 </html>
