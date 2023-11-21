@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!--CSS y Bootstrap-->
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--Animated Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Favicon-->
+    <link rel="icon" href="./imagenes/desktop.png" />
+
+    <!--Googl3-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Serif&family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 3.5rem;">Curso Básico de Programación Web</h1><br />
+        <h2>HTML, CSS, BOOTSTRAP Y JAVASCRIPT</h2>
+    </header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;" id="nav-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./imagenes/desktop.png" alt="logo" height="30" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html" style="color: #FFC436;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#first" style="color: #FFC436;">Primeros Pasos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HTML.html" style="color: #FFC436;">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./CSS.html" style="color: #FFC436;">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./error.html" style="color: #FFC436;">Javascript</a>
+                        </li>
+                    </ul>
+                    </div>
+                    </div>
+            
+        </nav>
+        <main style="text-align: justify;">
+            <div data-aos="zoom-in"
+            data-aos-duration="1000">
+            <h2>CSS</h2>
+            <br />
+            <p>
+                Bueno, ya tenemos una página web de mediados de los 90's, pero si lo que quieres es algo más moderno es necesario hablar de CSS, el "lenguaje" utilizado para estilizar las web. Por medio de CSS podemos personalizar el tipo, el color y el tamaño de las letras, el fondo de la sección o de la página, animaciones, posicionamiento y muchas cosas más.<br />
+                Para insertar CSS podemos utilizar cualquiera de las siguientes opciones:<br />
+                <ol>
+                    <li>
+                        <b>En línea:</b> En esta opción escribimos el código dentro de la etiqueta HTML que se quiera editar. Esta opción se recomienda para pequeñas ediciones muy específicas, ya que si se escribe toda la personalización no va a verse bien y va a dificultar su lectura y/o entendimiento.<br />
+                        Para utilizar esta forma de CSS debemos escribir style:"" dentro de la etiqueta, colocando entre las comillas la configuración deseada.
+                        <img class="pantallazo" src="./imagenes/css/inline_code.png" alt="css_en_linea_codigo">
+                        <img class="pantallazo" src="./imagenes/css/inline_color.png" alt="css_en_linea_color">
+                    </li>
+                    <li>
+                        <b>Interno:</b> Personalmente es la que menos me gusta, y prácticamente no la utilizo nunca. En esta opción crearemos una estiqueta style dentro del head de la página, y en medio de estas se coloca el código CSS.<br />
+                        Para escribir CSS, colocamos la etiqueta, la clase o el id (más adelante veremos esto), abrimos corchetes y en medio colocamos lo que se quiere personalizar, finalmente cerramos corchetes.<br />
+                        Otro de los inconvenientes que le encuentro a esta forma de escribir el CSS es que en cada página que creemos tendremos que copiar y pegar el código, y si se realiza algún cambio en uno de los HTML, pueden quedar diferentes las páginas.
+                        <img class="pantallazo" src="./imagenes/css/internal_code.png" alt="css_interno_codigo">
+                        <img class="pantallazo" src="./imagenes/css/internal_color.png" alt="css_interno_color">
+                    </li>
+                    <li>
+                        <b>Externo:</b> Creo que esta es la forma más utilizada, es fácil de personalizar y permite uniformidad en la personalización de todas las páginas HTML que hagamos, para utilizarlo debemos crear un nuevo archivo en nuestro <b>Visual Studio Code</b> el cual generalmente se llama style.css. Realmente uno puede colocar el nombre que prefiera, lo importante es que termine en .css, pero style.css es un nombre utilizado en todos lados, por lo que en caso que otro programador deba entrar a revisar nuestro código, será más facil encontrarlo si tiene este nombre.
+                        <img class="pantallazo" src="./imagenes/css/new-file.png" alt="nuevo_archivo"><br />
+                        Después de crear nuestro archivo css es necesario enlazarlo al HTML y esto se realiza escribiendo en el head el siguiente código:
+                        <img class="pantallazo" src="./imagenes/css/link_css.png" alt="enlace_css"><br />
+                        En el caso del ejemplo el archivo se llama styles.css, pero si creas un archivo con un nombre diferente es necesario escribir el nombre tal cual sea el del archivo. Una vez hecho el vínculo, vamos al archivo del CSS, donde escribimos el código de la misma forma que en la opción <b>interna</b>.<br />
+                        <img class="pantallazo" src="./imagenes/css/css_external_colors.png" alt="css_extrerno_pantalla"><br />
+                        Los invito que jueguen con el css, busquen en internet que caracteristicas se pueden cambiar, ojalá tengan mejor gusto que yo al elegir los colores y las tipografías.<br />
+                        Para el ejemplo el código que utilicé es este:<br />
+                        <img class="pantallazo" src="./imagenes/css/css_external_code.png" alt="css_externo_codigo">
+                    </li>
+                    <p>
+                        Como consejo, es una buena práctica comentar nuestro código en caso que alguien más lo deba revisar, estos comentarios no afectan el código, por lo que no se veran en la página web (si los escribimos bien). Al momento de vincular el <b>CSS</b> en el head podemos comentar que lo que viene a continuación es el vínculo CSS.<br />
+                        En caso de HTML, para hacer un comentario debemos escribir lo siguiente todo junto "< ! -- después escribimos el comentario que queremos dejar y cerramos con - - >".
+                    </p>
+                    <img class="pantallazo" src="./imagenes/css/comentario.png" alt="comentario HTML">
+                </ol>
+            </p>
+            </div>
+            <hr class="hr"/>
+            </main>
+
+
+
+
+            <footer>
+                <h6>Página creada por Camilo Ardila</h6>
+                <p>Si quieres comunicarte conmigo te dejo los links</p>
+                <p><a href="mailto:ardila84@outlook.com"><img class="rrss" src="./imagenes/RRSS/mail.png" width="30px"></a>
+                  <a href="https://wa.me/573144782183?text=Tengo%20una%20duda%20sobre%20el%20curso"><img class="rrss" src="./imagenes/RRSS/whatsapp.png" width="30px"></a>
+                  <a href="#nav-top"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC436" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
+                </svg></a></p>
+            </footer>
+          
+            <script>
+              AOS.init();
+            </script>
+</body>
+</html>
