@@ -34,8 +34,8 @@
     <header>
         <h1 style="font-size: 3.5rem;">Curso Básico de Programación Web</h1><br />
         <h2>HTML, CSS, BOOTSTRAP Y JAVASCRIPT</h2>
-    </header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;" id="nav-top">
+    </header id="top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #0C356A;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./imagenes/desktop.png" alt="logo" height="30" class="d-inline-block align-text-top"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,36 +78,70 @@
                     <li>
                         <b>En línea:</b> En esta opción escribimos el código dentro de la etiqueta HTML que se quiera editar. Esta opción se recomienda para pequeñas ediciones muy específicas, ya que si se escribe toda la personalización no va a verse bien y va a dificultar su lectura y/o entendimiento.<br />
                         Para utilizar esta forma de CSS debemos escribir style:"" dentro de la etiqueta, colocando entre las comillas la configuración deseada.
-                        <img class="pantallazo" src="./imagenes/css/inline_code.png" alt="css_en_linea_codigo">
-                        <img class="pantallazo" src="./imagenes/css/inline_color.png" alt="css_en_linea_color">
+                        <img src="./imagenes/css/inline_code.png" alt="css_en_linea_codigo">
+                        <img src="./imagenes/css/inline_color.png" alt="css_en_linea_color">
                     </li>
                     <li>
                         <b>Interno:</b> Personalmente es la que menos me gusta, y prácticamente no la utilizo nunca. En esta opción crearemos una estiqueta style dentro del head de la página, y en medio de estas se coloca el código CSS.<br />
                         Para escribir CSS, colocamos la etiqueta, la clase o el id (más adelante veremos esto), abrimos corchetes y en medio colocamos lo que se quiere personalizar, finalmente cerramos corchetes.<br />
                         Otro de los inconvenientes que le encuentro a esta forma de escribir el CSS es que en cada página que creemos tendremos que copiar y pegar el código, y si se realiza algún cambio en uno de los HTML, pueden quedar diferentes las páginas.
-                        <img class="pantallazo" src="./imagenes/css/internal_code.png" alt="css_interno_codigo">
-                        <img class="pantallazo" src="./imagenes/css/internal_color.png" alt="css_interno_color">
+                        <img src="./imagenes/css/internal_code.png" alt="css_interno_codigo">
+                        <img src="./imagenes/css/internal_color.png" alt="css_interno_color">
                     </li>
                     <li>
                         <b>Externo:</b> Creo que esta es la forma más utilizada, es fácil de personalizar y permite uniformidad en la personalización de todas las páginas HTML que hagamos, para utilizarlo debemos crear un nuevo archivo en nuestro <b>Visual Studio Code</b> el cual generalmente se llama style.css. Realmente uno puede colocar el nombre que prefiera, lo importante es que termine en .css, pero style.css es un nombre utilizado en todos lados, por lo que en caso que otro programador deba entrar a revisar nuestro código, será más facil encontrarlo si tiene este nombre.
-                        <img class="pantallazo" src="./imagenes/css/new-file.png" alt="nuevo_archivo"><br />
+                        <img src="./imagenes/css/new-file.png" alt="nuevo_archivo"><br />
                         Después de crear nuestro archivo css es necesario enlazarlo al HTML y esto se realiza escribiendo en el head el siguiente código:
-                        <img class="pantallazo" src="./imagenes/css/link_css.png" alt="enlace_css"><br />
+                        <img src="./imagenes/css/link_css.png" alt="enlace_css"><br />
                         En el caso del ejemplo el archivo se llama styles.css, pero si creas un archivo con un nombre diferente es necesario escribir el nombre tal cual sea el del archivo. Una vez hecho el vínculo, vamos al archivo del CSS, donde escribimos el código de la misma forma que en la opción <b>interna</b>.<br />
-                        <img class="pantallazo" src="./imagenes/css/css_external_colors.png" alt="css_extrerno_pantalla"><br />
+                        <img src="./imagenes/css/css_external_colors.png" alt="css_extrerno_pantalla"><br />
                         Los invito que jueguen con el css, busquen en internet que caracteristicas se pueden cambiar, ojalá tengan mejor gusto que yo al elegir los colores y las tipografías.<br />
                         Para el ejemplo el código que utilicé es este:<br />
-                        <img class="pantallazo" src="./imagenes/css/css_external_code.png" alt="css_externo_codigo">
+                        <img src="./imagenes/css/css_external_code.png" alt="css_externo_codigo">
                     </li>
                     <p>
                         Como consejo, es una buena práctica comentar nuestro código en caso que alguien más lo deba revisar, estos comentarios no afectan el código, por lo que no se veran en la página web (si los escribimos bien). Al momento de vincular el <b>CSS</b> en el head podemos comentar que lo que viene a continuación es el vínculo CSS.<br />
                         En caso de HTML, para hacer un comentario debemos escribir lo siguiente todo junto "< ! -- después escribimos el comentario que queremos dejar y cerramos con - - >".
                     </p>
-                    <img class="pantallazo" src="./imagenes/css/comentario.png" alt="comentario HTML">
+                    <img src="./imagenes/css/comentario.png" alt="comentario HTML">
                 </ol>
             </p>
             </div>
-            <hr class="hr"/>
+            <hr class="hr" />
+            <div data-aos="zoom-in"
+            data-aos-duration="1000">
+            <h3 style="padding: 3% 0 2%">Selectores CSS</h3>
+            <p>
+                Los selectores son la forma en la que seleccionamos cual es el elemento donde vamos a aplicar el CSS, para esto contamos con 3 opciones:<br />
+                <ul>
+                    <li>
+                        <b>Etiquetas HTML:</b> Podemos seleccionar una etiqueta como encabezados, párrafos, imágenes, items de listas o cualquier otra opción que venga en forma de etiqueta, para esto solo necesitamos escribir la etiqueta, abrir corchetes {, escribir nustro css y cerrar corchetes }. <br />
+                        <img src="./imagenes/css/selector_etiqueta_codigo.png" alt="selector_de_etiqueta"><br />
+                        En el caso del ejemplo, utilizamos la etiqueta h1 y personalizamos todo lo que deseamos de dicha etiqueta; es importante tener en cuenta que la personalización se aplicará a todas las etiquetas h1 que utilicemos en las páginas web, por lo que puede no ser lo esperado si queremos algo más específico.
+                    </li>
+                    <li>
+                        <b>Selectores de clase:</b> Los selectores de clase sirven cuando necesitamos aplicar el CSS en algunos elementos, pero no en todos. Me explico, tal vez necesitan una personalización especial para algúnos parrafos, pero no para todos. Si utilizan el selector de etiqueta "p" los cambios se aplicarán a todos los párrafos, cosa que no deseamos, en este caso nos sirve un selector de clase.<br />
+                        <img src="./imagenes/css/clase_html.png" alt="selector_clase_html"><br />
+                        Para utilizarlos, escribimos dentro de la etiqueta que queremos seleccionar la palabra class y le otorgamos un nómbre de clase. Después llamamos en nuestro archivo CSS a la clase y escribimos la personalización deseada.<br />
+                        <img src="./imagenes/css/clase_css.png" alt="slector_clase_css"><br />
+                        En el caso de los selectores de clase, se deben llamar escribiendo un punto "." y después la clase. Entonces siempre que queremos aplicar dicha personalización solo necesitamos escribir la clase dentro de la etiqueta. En el caso del ejemplo el párrafo se ve así:<br />
+                        <img src="./imagenes/css/clase_img.png" alt="selector_clase_web">
+                    </li>
+                    <li>
+                        <b>Selector de id:</b> Este selector se utiliza cuando vas a aplicar css especificamente a un elemento, no es posible repetir id por lo que solo se utiliza en etiquetas especiales, para aplicar CSS al titulo principal de la página, a una imagen particular o a una etiqueta en especial.<br />
+                        Para utilizarlo debemos ir a la etiqueta deseada y escribimos <b>id=""</b>, colocando entre las comillas la identificación elegida.<br />
+                        <img src="./imagenes/css/id_html.png" alt="selector_id_codigo">
+                        Al momento de llamarlo en nuestro archivo CSS debemos escribir un numeral "#", seguido del id, abrimos corchetes, escribimos el código CSS y cerramos corchetes.<br />
+                        <img src="./imagenes/css/id_css.png" alt="selector_id_CSS"><br />
+                        Y así se vería en nuestra web:<br />
+                        <img src="./imagenes/css/id_img.png" alt="selector_id_web">
+
+                    </li>
+                </ul> 
+            </p>
+            </div>
+            <hr class="hr" />
+            
             </main>
 
 
@@ -118,7 +152,7 @@
                 <p>Si quieres comunicarte conmigo te dejo los links</p>
                 <p><a href="mailto:ardila84@outlook.com"><img class="rrss" src="./imagenes/RRSS/mail.png" width="30px"></a>
                   <a href="https://wa.me/573144782183?text=Tengo%20una%20duda%20sobre%20el%20curso"><img class="rrss" src="./imagenes/RRSS/whatsapp.png" width="30px"></a>
-                  <a href="#nav-top"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC436" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC436" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
                 </svg></a></p>
